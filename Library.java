@@ -27,7 +27,7 @@ public class Library {
             
               if(books[i].isAvailable()){
 
-            System.out.println((i + 1) + " . " + books[i].getTitle() + " - " + books[i].getPrice() + " SAR");
+            System.out.println((i + 1) + " . " + books[i].getTitle() + " - " + books[i].getDescription() + " - " +  books[i].getPrice() + " SAR");
               }
               else{
                   System.out.println(books[i].getTitle() + "[SOLD OUT] ");
@@ -51,3 +51,4 @@ public class Library {
     
     
 }
+
