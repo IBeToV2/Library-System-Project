@@ -1,18 +1,15 @@
 package library.project;
 
 
-public class Book {
+public class Book extends LibraryItem{
     
-     private String title;
     private String description;
-    private double price;
-    private boolean isAvailable;
 
     public Book(String title, String description, double price) {
-        this.title = title;
-        this.description = description;
-        this.price = price;
-        this.isAvailable = true;
+        
+        super(title , price);
+        this.description = description;   
+    
     }
 
     public String getTitle() {
@@ -38,8 +35,15 @@ public class Book {
     public String toString() {
         return "Title: " + title + "\nDescription: " + description + "\nPrice: " + price + " SAR";
     }
+
+   
+
+   
+
+   
     
 }
 
     
+
 
